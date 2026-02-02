@@ -4,7 +4,7 @@ local UserInputService = game:GetService("UserInputService")
 local Player = Players.LocalPlayer
 
 -- // CONFIG FOLDER
-local FolderName = "My Save Scripts"
+local FolderName = "MySavedScripts"
 if not isfolder(FolderName) then
     makefolder(FolderName)
 end
@@ -403,7 +403,7 @@ UploadBtn.MouseButton1Click:Connect(function()
         UploadBtn.BackgroundColor3 = Theme.Red
         InputName.Text = ""
         InputScript.Text = ""
-        SaveButton.Text = "SaveRun SCRIPT"
+        SaveButton.Text = "SAVE SCRIPT"
     else
         PageList.Visible = true
         PageAdd.Visible = false
