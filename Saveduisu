@@ -4,7 +4,7 @@ local UserInputService = game:GetService("UserInputService")
 local Player = Players.LocalPlayer
 
 -- // CONFIG FOLDER
-local FolderName = "MySavedScripts"
+local FolderName = "Saved-Scripts"
 if not isfolder(FolderName) then
     makefolder(FolderName)
 end
@@ -16,7 +16,7 @@ end
 
 -- // --- SETUP SCREENGUI ---
 local SaveScriptUI = Instance.new("ScreenGui")
-SaveScriptUI.Name = "Save ScriptUI"
+SaveScriptUI.Name = "Folder Script"
 SaveScriptUI.DisplayOrder = 9999
 SaveScriptUI.ResetOnSpawn = false
 SaveScriptUI.ZIndexBehavior = Enum.ZIndexBehavior.Global
@@ -87,7 +87,7 @@ TitleLabel.Position = UDim2.new(0.05, 0, 0.1, 0)
 TitleLabel.Size = UDim2.new(0.5, 0, 0.3, 0)
 TitleLabel.Font = Enum.Font.GothamBold
 TitleLabel.Text = "Save Script"
-TitleLabel.TextColor3 = Theme.Text
+TitleLabel.TextColor3 =Save-me.Text
 TitleLabel.TextSize = 16
 TitleLabel.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -345,7 +345,7 @@ local function RefreshList()
                     local function MakeBtn(txt, func, outlineCol)
                         local b = Instance.new("TextButton")
                         b.Parent = BtnBox
-                        b.BackgroundColor3 = Theme.Black
+                        b.BackgroundColor3 = Theme.black
                         b.Size = UDim2.new(0.31, 0, 1, 0)
                         b.Font = Enum.Font.GothamBold
                         b.Text = txt
@@ -360,7 +360,7 @@ local function RefreshList()
                     end
                     
                     -- EDIT
-                    MakeBtn("EDIT", function()
+                    MakeBtn("edits", function()
                         currentEditFile = file
                         InputName.Text = name
                         InputScript.Text = readfile(file)
@@ -374,7 +374,7 @@ local function RefreshList()
                     end, Theme.Yellow)
                     
                     -- DEL
-                    MakeBtn("DEL", function()
+                    MakeBtn("delete", function()
                         fileToDelete = file
                         ConfirmDesc.Text = "Hapus '"..name.."'?"
                         ConfirmOverlay.Visible = true
@@ -403,7 +403,7 @@ UploadBtn.MouseButton1Click:Connect(function()
         UploadBtn.BackgroundColor3 = Theme.Red
         InputName.Text = ""
         InputScript.Text = ""
-        SaveButton.Text = "SIMPAN SCRIPT"
+        SaveButton.Text = "Saved SCRIPT"
     else
         PageList.Visible = true
         PageAdd.Visible = false
