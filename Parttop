@@ -1,4 +1,4 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/darkggcolam-ship-it/Chornii/refs/heads/main/Crintoggle'))()
+huuloadstring(game:HttpGet('https://raw.githubusercontent.com/darkggcolam-ship-it/Chornii/refs/heads/main/Crintoggle'))()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/darkggcolam-ship-it/Chornii/refs/heads/main/Togglos'))()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/darkggcolam-ship-it/Chornii/refs/heads/main/Niupdats'))()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/darkggcolam-ship-it/Chornii/refs/heads/main/Hiblox'))()
