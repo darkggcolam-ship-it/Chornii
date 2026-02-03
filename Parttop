@@ -1,2 +1,3 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/darkggcolam-ship-it/Chornii/refs/heads/main/Saveduisu"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/darkggcolam-ship-it/Chornii/refs/heads/main/Togglos"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/darkggcolam-ship-it/Chornii/refs/heads/main/Niupdats"))()
